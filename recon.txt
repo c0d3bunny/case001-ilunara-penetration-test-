@@ -1,0 +1,137 @@
+# Reconnaissance Logs: ilunara.com
+# Date: 2025-06-22
+# Operator: c0d3bunny (Moxi)
+
+---
+
+## WHOIS
+
+Domain Name: ILUNARA.COM
+   Registry Domain ID: 2797941468_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.namecheap.com
+   Registrar URL: http://www.namecheap.com
+   Updated Date: 2024-07-08T21:14:34Z
+   Creation Date: 2023-07-13T08:48:45Z
+   Registry Expiry Date: 2025-07-13T08:48:45Z
+   Registrar: NameCheap, Inc.
+   Registrar IANA ID: 1068
+   Registrar Abuse Contact Email: abuse@namecheap.com
+   Registrar Abuse Contact Phone: +1.6613102107
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: AMIT.NS.CLOUDFLARE.COM
+   Name Server: JUNE.NS.CLOUDFLARE.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2025-06-22T16:45:16Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+Domain name: ilunara.com
+Registry Domain ID: 2797941468_DOMAIN_COM-VRSN
+Registrar WHOIS Server: whois.namecheap.com
+Registrar URL: http://www.namecheap.com
+Updated Date: 2024-07-08T21:14:34.50Z
+Creation Date: 2023-07-13T08:48:45.00Z
+Registrar Registration Expiration Date: 2025-07-13T08:48:45.00Z
+Registrar: NAMECHEAP INC
+Registrar IANA ID: 1068
+Registrar Abuse Contact Email: abuse@namecheap.com
+Registrar Abuse Contact Phone: +1.9854014545
+Reseller: NAMECHEAP INC
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Registry Registrant ID: 
+Registrant Name: Redacted for Privacy
+Registrant Organization: Privacy service provided by Withheld for Privacy ehf
+Registrant Street: Kalkofnsvegur 2 
+Registrant City: Reykjavik
+Registrant State/Province: Capital Region
+Registrant Postal Code: 101
+Registrant Country: IS
+Registrant Phone: +354.4212434
+Registrant Phone Ext: 
+Registrant Fax: 
+Registrant Fax Ext: 
+Registrant Email: 38973391c7244bceb8a835b126c0c111.protect@withheldforprivacy.com
+Registry Admin ID: 
+Admin Name: Redacted for Privacy
+Admin Organization: Privacy service provided by Withheld for Privacy ehf
+Admin Street: Kalkofnsvegur 2 
+Admin City: Reykjavik
+Admin State/Province: Capital Region
+Admin Postal Code: 101
+Admin Country: IS
+Admin Phone: +354.4212434
+Admin Phone Ext: 
+Admin Fax: 
+Admin Fax Ext: 
+Admin Email: 38973391c7244bceb8a835b126c0c111.protect@withheldforprivacy.com
+Registry Tech ID: 
+Tech Name: Redacted for Privacy
+Tech Organization: Privacy service provided by Withheld for Privacy ehf
+Tech Street: Kalkofnsvegur 2 
+Tech City: Reykjavik
+Tech State/Province: Capital Region
+Tech Postal Code: 101
+Tech Country: IS
+Tech Phone: +354.4212434
+Tech Phone Ext: 
+Tech Fax: 
+Tech Fax Ext: 
+Tech Email: 38973391c7244bceb8a835b126c0c111.protect@withheldforprivacy.com
+Name Server: amit.ns.cloudflare.com
+Name Server: june.ns.cloudflare.com
+DNSSEC: unsigned
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+>>> Last update of WHOIS database: 2025-06-22T14:45:39.67Z <<<
+For more information on Whois status codes, please visit https://icann.org/epp
+
+---
+
+## DIG Output
+
+dig ilunara.com ANY +noall +answer
+
+ilunara.com.    28800   IN  NS  june.ns.cloudflare.com.  
+ilunara.com.    28800   IN  NS  amit.ns.cloudflare.com.  
+ilunara.com.    3600    IN  HINFO  "RFC8482" ""
+
+---
+
+## Gobuster DNS
+
+gobuster dns -d ilunara.com -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+
+Found: www.ilunara.com
+
+---
+
+## WhatWeb
+
+http://ilunara.com [301 Moved Permanently] ...  
+https://ilunara.com/ [200 OK] Cloudflare, HTML5, ...
+
+---
+
+## Nmap
+
+nmap -sS -sV -O ilunara.com
+
+Ports open: 80, 443, 8080, 8443  
+Service: Cloudflare HTTP Proxy
+
+---
+
+## Nikto Summary
+
++ Missing headers: X-Frame-Options, X-Content-Type-Options  
++ /cdn-cgi/trace endpoint detected  
++ 7962 requests made, 0 errors
